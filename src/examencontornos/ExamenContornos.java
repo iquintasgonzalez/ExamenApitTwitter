@@ -27,7 +27,7 @@ public class ExamenContornos {
         twitter = new TwitterFactory(cb.build()).getInstance();
 
         */
-        Twitter twitterStream = new TwitterFactory().getInstance();
+        Twitter twitterStream = new TwitterFactory("twitter4j.properties").getInstance();
     
         
          //variables declaradas

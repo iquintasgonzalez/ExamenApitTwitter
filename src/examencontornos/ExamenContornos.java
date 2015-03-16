@@ -17,7 +17,7 @@ public class ExamenContornos {
         // variable declarada
         Twitter twitter;
         
-       /*  ConfigurationBuilder cb = new ConfigurationBuilder();
+      /*  ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
                 .setOAuthConsumerKey("0AOUWd7NMNgCi11E1mqpKCkuL")
                 .setOAuthConsumerSecret("xW2KlbmdUaKNnBSWm73p9VpL9ywNeGrx726tXVv7R4Wji8a0KK")
@@ -25,8 +25,10 @@ public class ExamenContornos {
                 .setOAuthAccessTokenSecret("gZekOzP1RBvqbOwg2zUHhVy4OcMSdub8YIeRTXGqGGVG7");
 
         twitter = new TwitterFactory(cb.build()).getInstance();
-*/
-        
+
+        */
+        Twitter twitterStream = new TwitterFactory().getInstance();
+    
         
          //variables declaradas
         String busqueda;

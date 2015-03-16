@@ -1,4 +1,3 @@
-
 package examencontornos;
 
 import java.util.Scanner;
@@ -12,19 +11,18 @@ import twitter4j.TwitterException;
  */
 public class ExamenContornos {
 
-    
     public static void main(String[] args) throws TwitterException {
-      
+        // variable declarada
         Twitter twitter;
-
-   String busqueda;
+        //variables declaradas
+        String busqueda;
         String tweet;
         String nombre;
         String mensaje;
         int opcion;
-
+        //objeto creado
         Metodos obj = new Metodos();
-
+        //menu
         obj.verTL();
 
         busqueda = JOptionPane.showInputDialog("Introduzca lo que desee buscar en Twitter");
@@ -36,7 +34,7 @@ public class ExamenContornos {
         nombre = JOptionPane.showInputDialog("Usuario");
         mensaje = JOptionPane.showInputDialog("¿Que mensaje le quieres enviar?");
         obj.directMessage(nombre, mensaje);
-
+        //un menu switch
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("opciones: \n1 --> TimeLine\n2 --> Buscar\n3 --> Tweettear\n4 --> DirectMsg\n5 --> Exit"));
             switch (opcion) {
@@ -64,4 +62,3 @@ public class ExamenContornos {
         } while (opcion != 0 && opcion != 4);
     }
 }
-

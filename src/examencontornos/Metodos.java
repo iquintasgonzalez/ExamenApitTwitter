@@ -63,4 +63,10 @@ public class Metodos {
         System.out.println("Successfully updated the status to [" + status.getText() + "].");
 
     }
+     public void directMessage(String nombre, String mensaje) throws TwitterException {
+
+        DirectMessage message = twitter.sendDirectMessage(nombre, mensaje);
+        System.out.println("Sent: " + message.getText() + " to @" + message.getRecipientScreenName());
+
+    }
 }

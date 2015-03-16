@@ -48,4 +48,13 @@ public class Metodos {
         }
 
     }
+     public void buscarTrending(String busqueda) throws TwitterException {
+
+        Query query = new Query(busqueda);
+        QueryResult result = twitter.search(query);
+        for (Status status : result.getTweets()) {
+            System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
+        }
+
+    }
 }
